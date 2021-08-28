@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.namesContainer {
+  grid-row: 2 / 2;
+
+  place-self: center;
+
+  margin: 2rem;
+}
+
+.namesContainer-names {
+  padding: 1rem;
+}
+
+.searchForm {
+  grid-row: 1 / 1;
+  place-self: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.searchForm-form {
+  width: 10rem;
+
+  padding: 1rem .5rem;
+  font-size: 1.5rem;
+}
